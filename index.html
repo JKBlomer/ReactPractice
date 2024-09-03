@@ -8,6 +8,18 @@
             const headerContent = document.createTextNode(text);
             header.appendChild(headerContent);
             app.appendChild(header);
+            const button = document.createElement('button');
+            app.appendChild(button);
+            button.innerText="click";
+            button.addEventListener('click',()=>{
+               header.innerText='changed';
+               button.innerText="clicked";
+            })
         </script>
+
+
+
+
+
     </body>
 </html>
